@@ -22,7 +22,7 @@
     "properties": {}
   },
   "devDependencies": {
-    "eslint": "^2.7.0"
+    "eslint": "^7.2.0"
   },
   "keywords": [
     "gitbook",
