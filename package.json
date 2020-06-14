@@ -1,72 +1,34 @@
 {
-  "name": "gitbook-plugin-sharing",
-  "description": "Sharing buttons in GitBooks website",
+  "name": "gitbook-plugin-webshare",
+  "description": "Share buttons in GitBooks website using Web Share API",
   "main": "index.js",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "dependencies": {
     "lodash": "^3.10.1"
   },
   "engines": {
     "gitbook": ">=2.4.0"
   },
-  "homepage": "https://github.com/GitbookIO/plugin-sharing",
+  "homepage": "https://github.com/NotWoods/gitbook-plugin-webshare",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GitbookIO/plugin-sharing.git"
+    "url": "https://github.com/NotWoods/gitbook-plugin-webshare.git"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/GitbookIO/plugin-sharing/issues"
+    "url": "https://github.com/NotWoods/gitbook-plugin-webshare/issues"
   },
   "gitbook": {
-    "properties": {
-      "facebook": {
-        "type": "boolean",
-        "default": true,
-        "title": "Facebook"
-      },
-      "twitter": {
-        "type": "boolean",
-        "default": true,
-        "title": "Twitter"
-      },
-      "google": {
-        "type": "boolean",
-        "default": false,
-        "title": "Google"
-      },
-      "weibo": {
-        "type": "boolean",
-        "default": false,
-        "description": "Weibo"
-      },
-      "instapaper": {
-        "type": "boolean",
-        "default": false,
-        "description": "Instapaper"
-      },
-      "vk": {
-        "type": "boolean",
-        "default": false,
-        "description": "VK"
-      },
-      "all": {
-        "type": "array",
-        "items": {
-          "type": "string"
-        },
-        "default": [
-          "facebook",
-          "google",
-          "twitter",
-          "weibo",
-          "instapaper"
-        ],
-        "uniqueItems": true
-      }
-    }
+    "properties": {}
   },
   "devDependencies": {
     "eslint": "^2.7.0"
-  }
+  },
+  "keywords": [
+    "gitbook",
+    "gitbook-plugin",
+    "sharing",
+    "share",
+    "web-share"
+  ]
 }

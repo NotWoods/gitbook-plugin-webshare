@@ -1,39 +1,13 @@
-# plugin-sharing
+# gitbook-plugin-webshare
 
-This plugin adds sharing buttons in the GitBook website toolbar to share book on social networks.
+This plugin adds a sharing button in the GitBook website toolbar to share book using the [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share).
 
-### Disable this plugin
+### Enable this plugin
 
-This is a default plugin and it can be disabled using a `book.json` configuration:
+This replaces the builtin sharing plugin, so it should be disabled.
 
 ```
 {
-    plugins: ["-sharing"]
+    plugins: ["-sharing", "webshare"]
 }
 ```
-
-### Configuration
-
-This plugin can be configured in the `book.json`:
-
-Default configuration is:
-
-```js
-{
-    "pluginsConfig": {
-        "sharing": {
-            "facebook": true,
-            "twitter": true,
-            "google": false,
-            "weibo": false,
-            "instapaper": false,
-            "vk": false,
-            "all": [
-                "facebook", "google", "twitter",
-                "weibo", "instapaper"
-            ]
-        }
-    }
-}
-```
-
